@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      div {
+        border-width: 1px;
+        border-color: red;
+        border-style: solid;
+      }
+
+      .document {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 1fr 9fr 1fr ;
+        
+      }
+
+      .main {
+        
+        border-width: 1px;
+        border-color: black;
+        border-style: solid;
+        height: auto;
+        display: grid;
+      }
+
+      .main-menu {
+        font-size: 15px;
+        border-width: 1px;
+        border-color: black;
+        border-style: solid;
+        display: flex;
+        height: 50px;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .icon {
+        font-size: 25px;
+      }
+
+      .in-menu {
+        display: flex;
+        height: 50px;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .language {
+        display: flex;
+        height: 50px;
+        justify-content: flex-end;
+        align-self: flex-end;
+        align-items: center;
+      }
+
+      .content {
+        display: grid;
+        grid-template-rows: 100px auto 300px;
+      }
+
+      .introduce {
+        font-size: 30px;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+      }
+
+      .store {
+        font-size: 20px;
+        height: 50px;
+        display: flex;
+        align-items: flex-end;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="document">
+        <div></div>
+      <!-- 메인 전체 -->
+      <div class="main">
+        <!-- 위쪽 메뉴 -->
+        <div class="main-menu">
+          <div class="icon">토스</div>
+          <div></div>
+          <div class="in-menu">
+            <div>회사소개</div>
+            <div>고객센터</div>
+            <div>자주 묻는 질문</div>
+            <div>토스 인증서</div>
+            <div>채용</div>
+          </div>
+          <div class="language">
+            <div>KOR</div>
+            <div>ENG</div>
+          </div>
+        </div>
+        <!-- 실제 컨텐츠가 있는곳 -->
+        <div class="content">
+          <div></div>
+          <!-- 금융의 어쩌구 적힌곳 -->
+          <div class="introduce">
+            <div>금융의 모든 것</div>
+            <div>토스에서 쉽고 간편하게</div>
+            <!-- 스토어 -->
+            <div class="store">
+              <div>앱스토어</div>
+              <div>플레이스토어</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+
+.container {
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    height: 500px;
+    /* 컨텐츠를 배열, flex-direction 따라서 방향이 바뀜 */
+    flex-direction: row;
+    /* 행 방향의 배열, space-evenly : 동일한 여백으로 배치 */
+    /* content는 여러줄에 대한 설정 */
+    justify-content: space-evenly;
+    /* 열 방향의 배열 */
+    /* items는 한줄에 대한 설정 */
+    /* content 모든것에 대한 설정 */
+    align-content: flex-start;
+    /* 넓이 관련 설정 */
+    flex-wrap: wrap;
+}
+
+.item1 {
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    width: 50px;
+    height: 50px;
+}
+
+.item2 {
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    width: 50px;
+    height: 50px;
+    /* 개별적인 배치순서 관련 */
+    order: 1;
+}
+
+.item3 {
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    width: 50px;
+    height: 50px;
+    /* 자신의 배열 */
+    /* align-self: self-start; */
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+        div {
+            border: 1px solid black;
+        }
+        
+        .container {
+            display: grid;
+            height: 200px;
+            /* 몇줄로 배열 할것인지 */
+            /* fr 총합 12칸중에 자신이 배열 될 위치 */
+            /* px의 경우 px씩 배열 된다. */
+            /* px와 fr이 있으면 px가 남긴 전체넓이에 fr을 배치 한다. */
+            grid-template-columns: 2fr 8fr 2fr;
+            /* 어떻게 배치할것인지 */
+            justify-content: center;
+            /* 열 방향 배치 */
+            align-content: center;
+            /* 상하좌우의 갭 */
+            /* gap: 10px; */
+            /* 상하의 갭 */
+            row-gap: 10px;
+            /* 좌우의 갭 */
+            column-gap: 10px;
+        }
+
+        .item {
+            width: 50px;
+            height: 50px;
+        }
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .ib {
+            display: inline-block;
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: coral;
+        }
+
+        .second {
+            /* margin-top: 35px; */
+            position: relative;
+            top: 25px;
+            /* left: 25px; */
+        }
+
+        .third {
+            position: absolute;
+            background-color: blue;
+            top: 0px;
+            left: 0px;
+            color: white;
+        }
+
+        .first {
+            position: relative;
+            z-index: 1;
+        }
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <!-- static 방식 -->
+    <!-- z-index는 static이 안된다. -->
+    <div class="ib first">1</div>
+    <!-- relative 방식 -->
+    <div class="ib second">2</div>
+    <!-- absolute 방식, 크롬에서는 top, left 0으로 맞춰야함 -->
+    <div class="ib third">3</div>
+    <div class="ib">4</div>
+</body>
+</html>
